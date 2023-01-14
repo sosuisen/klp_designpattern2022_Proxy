@@ -4,13 +4,13 @@ public class Printer implements Printable {
 
     // コンストラクタ
     public Printer() {
-        heavyJob("Printerのインスタンスを生成中");
+        checkInternalState("Printerのインスタンスを生成中");
     }
 
     // コンストラクタ（名前指定）
     public Printer(String name) {
         this.name = name;
-        heavyJob("Printerのインスタンス(" + name + ")を生成中");
+        checkInternalState("Printerのインスタンス(" + name + ")を生成中");
     }
 
     // 名前の設定
@@ -33,7 +33,7 @@ public class Printer implements Printable {
     }
 
     // 重い作業(のつもり)
-    private void heavyJob(String msg) {
+    private void checkInternalState(String msg) {
         System.out.print(msg);
         for (int i = 0; i < 5; i++) {
             try {
