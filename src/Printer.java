@@ -24,6 +24,11 @@ public class Printer implements Printable {
     public String getPrinterName() {
         return name;
     }
+    
+    @Override
+    public String getInternalState() {
+    	return internalState;
+    }
 
     // 名前付きで表示
     @Override

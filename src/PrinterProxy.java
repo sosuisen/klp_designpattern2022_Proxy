@@ -30,6 +30,12 @@ public class PrinterProxy implements Printable {
         return name;
     }
 
+    @Override
+    public String getInternalState() {
+        realize();
+        return real.getInternalState();
+    }
+
     // 表示
     @Override
     public void print(String string) {
