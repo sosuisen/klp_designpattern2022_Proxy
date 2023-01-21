@@ -10,6 +10,6 @@ public class Main {
 		System.out.println("ここまでの所要時間：" + (lap1 - start) + "ms");
         p.print("Hello, world.");
 		long lap2 = System.currentTimeMillis();
-		System.out.println("ここまでの所要時間：" + (lap2 - start) + "ms");
+		System.out.println("ここまでの所要時間：" + (lap2 - lap1) + "ms");
     }
 }
